@@ -1,0 +1,9 @@
+<h1>Game#generate_grid</h1>
+<p>Welcome to the longest word-game !</p>
+<p>  <%=  @grid.join('-') %> <p>
+<form action="/game/score">
+  <input type="text" placeholder="Guess the longest word" name="attempt">
+  <input type="hidden" name="grid" value="<%=  @grid.join('-') %>">
+  <input type="hidden" name="grid" value="<%=  @start %>">
+  <input type="submit" value="Go">
+</form>
